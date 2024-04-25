@@ -2,7 +2,7 @@
 
 const getPost = async()=>{
   
-  alert("Click para continuar...");
+  alert("Click para continuar...");git
   try{
   let url = await fetch('https://jsonplaceholder.typicode.com/posts');
   let data = await url.json();
