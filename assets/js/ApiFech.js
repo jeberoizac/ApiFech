@@ -2,11 +2,11 @@
 
 const getPost = async()=>{
   
-  alert("Click para continuar...");git
+  alert("Click para continuar...");
   try{
   let url = await fetch('https://jsonplaceholder.typicode.com/posts');
   let data = await url.json();
- //console.log(data);
+ console.log(data);
    data.forEach(post => {
     let li = document.createElement("li");
     $(li).html("<p><strong>"+post.title+"</strong><br>"+post.body+"</p>");
